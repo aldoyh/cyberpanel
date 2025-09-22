@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberPanel Dark Theme Demo</title>
+    <link rel="stylesheet" href="cyberpanel_dark_theme.css">
+    <style>
+        body {
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .demo-section {
+            margin-bottom: 30px;
+        }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>CyberPanel Dark Theme Demo</h1>
+        <p>This page demonstrates the dark theme styling for CyberPanel components.</p>
+
+        <div class="demo-section">
+            <h2>Cards and Panels</h2>
+            <div class="demo-grid">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3>Server Status</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>This is a sample panel with dark theme styling.</p>
+                        <div class="info-box">
+                            <p>Information box with proper contrast.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>Version Information</h3>
+                    <div style="margin-top: 15px;">
+                        <label class="form-label">Current Version</label>
+                        <input type="text" class="form-control" value="2.4.3" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Forms and Inputs</h2>
+            <div class="demo-grid">
+                <div class="content-card">
+                    <h3>Sample Form</h3>
+                    <form style="margin-top: 20px;">
+                        <div style="margin-bottom: 15px;">
+                            <label class="form-label">Text Input</label>
+                            <input type="text" class="form-control" placeholder="Enter text here">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label class="form-label">Select Option</label>
+                            <select class="form-select">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label class="form-label">Textarea</label>
+                            <textarea class="form-control" rows="3" placeholder="Enter description"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary">Primary Button</button>
+                        <button type="button" class="btn btn-secondary" style="margin-left: 10px;">Secondary Button</button>
+                    </form>
+                </div>
+
+                <div class="content-card">
+                    <h3>Status Indicators</h3>
+                    <div style="margin-top: 20px;">
+                        <div class="alert alert-success" style="margin-bottom: 10px;">
+                            ✓ Success message with good contrast
+                        </div>
+                        <div class="alert alert-warning" style="margin-bottom: 10px;">
+                            ⚠ Warning message for attention
+                        </div>
+                        <div class="alert alert-danger" style="margin-bottom: 10px;">
+                            ✗ Error message clearly visible
+                        </div>
+                        <div class="alert alert-info">
+                            ℹ Information message for context
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Tables and Data</h2>
+            <div class="content-card">
+                <h3>Sample Data Table</h3>
+                <table class="table table-striped table-hover" style="margin-top: 20px; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Last Updated</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Website 1</td>
+                            <td><span class="badge badge-success">Active</span></td>
+                            <td>2024-01-15</td>
+                            <td>
+                                <button class="btn btn-sm btn-primary">Edit</button>
+                                <button class="btn btn-sm btn-secondary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Website 2</td>
+                            <td><span class="badge badge-warning">Pending</span></td>
+                            <td>2024-01-14</td>
+                            <td>
+                                <button class="btn btn-sm btn-primary">Edit</button>
+                                <button class="btn btn-sm btn-secondary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Website 3</td>
+                            <td><span class="badge badge-danger">Error</span></td>
+                            <td>2024-01-13</td>
+                            <td>
+                                <button class="btn btn-sm btn-primary">Edit</button>
+                                <button class="btn btn-sm btn-secondary">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Code and Logs</h2>
+            <div class="content-card">
+                <h3>Log Output</h3>
+                <div class="log-container" style="margin-top: 20px;">
+                    <textarea class="log-textarea" readonly>
+[2024-01-15 10:30:15] INFO: Starting CyberPanel services...
+[2024-01-15 10:30:16] INFO: Loading configuration files...
+[2024-01-15 10:30:17] SUCCESS: All services started successfully
+[2024-01-15 10:30:18] INFO: System ready for connections
+[2024-01-15 10:30:19] DEBUG: Memory usage: 512MB / 2GB
+                    </textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Navigation</h2>
+            <div class="content-card">
+                <h3>Tab Navigation</h3>
+                <ul class="nav nav-tabs" style="margin-top: 20px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logs</a>
+                    </li>
+                </ul>
+                <div style="padding: 20px; border: 1px solid var(--border-color); border-top: none;">
+                    <p>Tab content area with consistent styling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
